@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" android:id="@+id/linearLayout1">
+
+        <Button
+            android:id="@+id/wifi_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wifi" />
+
+        <Button
+            android:id="@+id/bt_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bt" />
+
+        <Button
+            android:id="@+id/gyro_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gyro" />
+
+    </LinearLayout>
+    <Button android:id="@+id/Long_button" 
+        android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:text="MakeGraph" 
+         android:layout_below="@+id/linearLayout1" 
+         android:layout_centerHorizontal="true"
+          android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/Endless_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Long_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="EndlessScan" />
+
+    <Button
+        android:id="@+id/PluralScan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Endless_button"
+        android:layout_marginTop="17dp"
+        android:layout_toLeftOf="@+id/Long_button"
+        android:text="PluralScan" />
+
+    <Button
+        android:id="@+id/Speed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/PluralScan_button"
+        android:layout_toRightOf="@+id/Endless_button"
+        android:text="Speed" />
+
+    <Button
+        android:id="@+id/visual_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/MandD_button"
+        android:layout_alignLeft="@+id/Speed_button"
+        android:text="VisualMap" />
+
+    <Button
+        android:id="@+id/MandD_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_marginBottom="44dp"
+        android:layout_toLeftOf="@+id/Long_button"
+        android:text="MapDBm" />
+
+    <Button
+        android:id="@+id/all_dbm_map_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MandD_button"
+        android:layout_alignBottom="@+id/MandD_button"
+        android:layout_centerHorizontal="true"
+        android:text="電波マップ" />
+
+    <Button
+        android:id="@+id/Map_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/MandD_button"
+        android:layout_marginBottom="50dp"
+        android:layout_toLeftOf="@+id/all_dbm_map_button"
+        android:text="Map" />
+
+    <Button
+        android:id="@+id/Down_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Map_button"
+        android:layout_alignBottom="@+id/Map_button"
+        android:layout_alignRight="@+id/Speed_button"
+        android:layout_marginRight="30dp"
+        android:text="DownLoad" />
+
+    <Button
+        android:id="@+id/calc_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Down_button"
+        android:layout_alignLeft="@+id/all_dbm_map_button"
+        android:text="計算用" />
+
+</RelativeLayout>
